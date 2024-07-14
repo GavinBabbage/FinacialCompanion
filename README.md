@@ -39,8 +39,8 @@ Compile and Run:
 
 bash
 
-    javac Main.java
-    java Main
+    javac Driver.java
+    java Driver
 
 Requirements
 
