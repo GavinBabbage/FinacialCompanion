@@ -11,7 +11,7 @@ public class NetAssetValuePerShare {
         double nav;
         double noOfSharesInIssue;
 
-        System.out.println("\uF0A9 Net Asset Value Per Share");
+        System.out.println("\uF0A5 Net Asset Value Per Share \uF0A5");
         System.out.print("-------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net asset value / No of shares in issue]");
         System.out.println(" - We use the equity (NAV) Excluding the Non Controlling Shareholders Interest (NCI)");

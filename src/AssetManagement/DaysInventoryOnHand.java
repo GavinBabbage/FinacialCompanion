@@ -4,15 +4,15 @@ import Main.Driver;
 
 public class DaysInventoryOnHand {
 //    public static void main(String[] args) {
-//        DIOH();
+//        DaysInventory();
 //    }
 
-    public static double DIOH(){
+    public static double DaysInventory(){
         double answer;
         double cost_of_sales;
         double inventory;
 
-        System.out.println("\uF0A9 Days inventory on hand");
+        System.out.println("\uF0A5 Days inventory on hand \uF0A5");
         System.out.print("-------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Inventory x 365) / Cost of sales]");
         System.out.println(" - Calculates the average number of days between the purchase (when Risks &\n" +

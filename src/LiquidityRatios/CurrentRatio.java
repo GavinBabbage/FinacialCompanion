@@ -12,7 +12,7 @@ public class CurrentRatio {
         double current_assets;
         double current_liabilities;
 
-        System.out.println("\uF0A9 Current ratio");
+        System.out.println("\uF0A5 Current ratio \uF0A5");
         System.out.print("-------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Current assets / Current liabilities]");
         System.out.println(" - Evaluates the ability of the firm to settle short debts from conversion of All Current\n" +
@@ -30,7 +30,7 @@ public class CurrentRatio {
         System.out.println();
         System.out.printf("\uF0A7 Current ratio: %.4f times.",answer);
         System.out.println();
-        System.out.printf("\uF0A7 CA:CL =  R%.4f:1",answer);
+        System.out.printf("\uF0A7 CA : CL =  R%.4f : 1",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

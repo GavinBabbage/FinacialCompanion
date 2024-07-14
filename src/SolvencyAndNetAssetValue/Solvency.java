@@ -7,7 +7,7 @@ public class Solvency {
 //        SolvencyTest();
 //    }
     public static boolean SolvencyTest(){
-        System.out.println("\uF0A9 Solvency Test");
+        System.out.println("\uF0A5 Solvency Test \uF0A5");
         System.out.print("-------------------------------------------------------------------------------\n");
         long total_assets;
         long total_liabilities;
