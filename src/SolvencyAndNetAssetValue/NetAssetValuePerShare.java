@@ -12,11 +12,11 @@ public class NetAssetValuePerShare {
         double noOfSharesInIssue;
 
         System.out.println("\uF0A5 Net Asset Value Per Share \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net asset value / No of shares in issue]");
         System.out.println(" - We use the equity (NAV) Excluding the Non Controlling Shareholders Interest (NCI)");
         System.out.println(" - Based on Historical Cost values obtained from the Statement of Financial Position");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Net asset value: R");

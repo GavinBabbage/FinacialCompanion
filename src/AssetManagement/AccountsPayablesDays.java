@@ -13,7 +13,7 @@ public class AccountsPayablesDays {
         double cost_of_sales;
 
         System.out.println("\uF0A5 Accounts Payables Days (Settlement period) \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Accounts (Trade) Payables x 365) / Cost of Sales]");
         System.out.println(" - Calculates the Average number of days between the Credit purchases and when\n" +
                            "   the cash is paid to creditors.");
@@ -21,7 +21,7 @@ public class AccountsPayablesDays {
         System.out.println(" \uF0A7 How can we improve The Creditors Payment Period?\n" +
                 "   \uF0D8 Increase payment period as long as it is within the credit terms. (Stretching");
 
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Accounts (Trade) Payables: R");

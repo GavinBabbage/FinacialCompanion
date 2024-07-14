@@ -13,7 +13,7 @@ public class DaysInventoryOnHand {
         double inventory;
 
         System.out.println("\uF0A5 Days inventory on hand \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Inventory x 365) / Cost of sales]");
         System.out.println(" - Calculates the average number of days between the purchase (when Risks &\n" +
                 "rewards of ownership is transferred from purchaser to the seller) and sale of\n" +
@@ -25,7 +25,7 @@ public class DaysInventoryOnHand {
         System.out.println(" - The high levels of inventory would negatively affect the ROA and TAT ratios.");
         System.out.println(" - Holding too much inventory decreases the risk of stock-outs resulting in increased sales (profits) and\n" +
                 "reduces ordering costs.");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Inventory: R");

@@ -13,10 +13,10 @@ public class InventoryTurnoverRatio {
         double inventory;
 
         System.out.println("\uF0A5 Inventory Turnover Ratio \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Cost of sales / Inventory]");
         System.out.println(" - Calculates the average number of times inventory is sold during the year.");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Cost of sales: R");

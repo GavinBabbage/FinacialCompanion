@@ -13,11 +13,11 @@ public class CurrentRatio {
         double current_liabilities;
 
         System.out.println("\uF0A5 Current ratio \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Current assets / Current liabilities]");
         System.out.println(" - Evaluates the ability of the firm to settle short debts from conversion of All Current\n" +
                 "assets to cash.");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Current Assets (CA): R");

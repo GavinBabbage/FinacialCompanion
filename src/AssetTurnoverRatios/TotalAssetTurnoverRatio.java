@@ -12,7 +12,7 @@ public class TotalAssetTurnoverRatio {
         double total_assets_at_CV;
 
         System.out.println("\uF0A5 Total Asset Turnover (TAT) \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Revenue (Sales) / Total Assets at COST VALUE]");
         System.out.println(" - Evaluates the use of ALL assets to generate Revenue (Income).");
 
@@ -23,9 +23,7 @@ public class TotalAssetTurnoverRatio {
                 "     \uF0D8 Could be the result of asset purchases late in the previous year or \n" +
                 "        revenue is down.\n" +
                 "     \uF0D8 Increase in inventory levels or other current assets.");
-        System.out.println();
-
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Revenue (Sales): R");
@@ -38,7 +36,7 @@ public class TotalAssetTurnoverRatio {
         System.out.println();
         System.out.printf("\uF0A7 Total Asset Turnover (TAT): %.4f times.",answer);
         System.out.println();
-        System.out.printf("\uF0A7 Rev : TA =  R%.4f : R1",answer);
+        System.out.printf("\uF0A7 Rev : TA = R%.4f : R1",answer);
         System.out.println();
         System.out.printf("\uF0A7 In the target year, for every R1 invested in assets, R%.4f was generated as \n" +
                           "  sales income.",answer);

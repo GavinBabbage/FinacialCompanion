@@ -12,7 +12,7 @@ public class AccountReceivablesDays {
         double credit_sales;
 
         System.out.println("\uF0A5 Account Receivables Days (Collection period) \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (NET Trade Receivables x 365) / Credit Sales]");
         System.out.println(" - Calculates the Average number of days between the Credit sales and when the\n" +
                            "   Cash is collected from debtors. Assume here that all sales are on credit.");
@@ -23,7 +23,7 @@ public class AccountReceivablesDays {
         System.out.println(" \uF0A7 What are the benefits and risks when INCREASING collection period?\n" +
                 "   \uF0D8 Sales may increase increasing Accrual profits.\n" +
                 "   \uF0D8 Cash inflows reduce, Bad debts increase");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("NET Trade Receivables: R");

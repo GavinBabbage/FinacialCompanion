@@ -14,12 +14,12 @@ public class AcidTestRatio {
         double inventory;
 
         System.out.println("\uF0A5 Acid test ratio (Quick ratio) \uF0A5");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Current assets - Inventory) / Current liabilities]");
         System.out.println(" - A more RELIABLE indicator of liquidity.");
         System.out.println(" - Evaluates the ability of the firm to settle short debts /obligations without relying on\n" +
                 "the sale of Inventory as it only relies on cash and debtors.");
-        System.out.print("-------------------------------------------------------------------------------\n");
+        System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("Current Assets (CA): R");
