@@ -3,9 +3,9 @@ package SustainableGrowthRate;
 import Main.Driver;
 
 public class SustainableGrowthRate {
-    public static void main(String[] args) {
-        SGR();
-    }
+//    public static void main(String[] args) {
+//        SGR();
+//    }
 
     public static double SGR() {
         double answer;
