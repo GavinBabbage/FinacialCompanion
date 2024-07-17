@@ -1,7 +1,5 @@
 package FinancialLeverageRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class DebtToEquityRatioAllLiabilities {
 //    public static void main(String[] args) {
 //        DebtToEquityAll();
@@ -13,7 +11,7 @@ public class DebtToEquityRatioAllLiabilities {
         double current_liabilities;
         double total_equity;
 
-        System.out.println("\uF0A5 Debt To Equity Ratio \uF0A5");
+        System.out.println("\u25A0 Debt To Equity Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Total Debt (Non-Current Liabilities + Current Liabilities) x 100 / Total Equity]");
         System.out.println(" - The Debt to equity ratio indicates that for every R1 of capital provided by\n" +
@@ -23,18 +21,18 @@ public class DebtToEquityRatioAllLiabilities {
         System.out.println("Please enter the following:");
 
         System.out.print("Non-Current Liabilities: R");
-        non_current_liabilities = Driver.keyboard.nextDouble();
+        non_current_liabilities = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Current Liabilities: R");
-        current_liabilities = Driver.keyboard.nextDouble();
+        current_liabilities = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Total Equity: R");
-        total_equity = Driver.keyboard.nextDouble();
+        total_equity = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (non_current_liabilities + current_liabilities) * 100 / total_equity;
         System.out.println();
-        System.out.printf("\uF0A7 Debt To Equity Ratio: %.4f%%%n",answer);
-        System.out.printf("\uF0A7 For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
+        System.out.printf("\u00B7 Debt To Equity Ratio: %.4f%%%n",answer);
+        System.out.printf("\u00B7 For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
                           "  provided by Debt.",answer/100);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");

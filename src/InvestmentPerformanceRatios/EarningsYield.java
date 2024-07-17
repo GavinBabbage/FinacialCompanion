@@ -1,7 +1,5 @@
 package InvestmentPerformanceRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class EarningsYield {
 //    public static void main(String[] args) {
 //        EY();
@@ -11,7 +9,7 @@ public class EarningsYield {
         double earnings_per_share;
         double market_price_per_share;
 
-        System.out.println("\uF0A5 Earnings Yield (EY) (Inverse of PE) \uF0A5");
+        System.out.println("\u25A0 Earnings Yield (EY) (Inverse of PE) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Earnings per share (EPS) x 100 / Market price per share]");
         System.out.println(" - Yield investors are demanding on their investments.");
@@ -19,14 +17,14 @@ public class EarningsYield {
         System.out.println("Please enter the following:");
 
         System.out.print("Earnings Per Share (EPS): R");
-        earnings_per_share = Driver.keyboard.nextDouble();
+        earnings_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Market price per share: R");
-        market_price_per_share = Driver.keyboard.nextDouble();
+        market_price_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = earnings_per_share * 100 / market_price_per_share;
         System.out.println();
-        System.out.printf("\uF0A7 Earnings Yield (EY) (Inverse of PE): %.4f%%%n", answer);
+        System.out.printf("\u00B7 Earnings Yield (EY) (Inverse of PE): %.4f%%%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

@@ -1,7 +1,5 @@
 package SolvencyAndNetAssetValue;
-
-import Main.Driver;
-
+import Main.*;
 public class NetAssetValuePerShare {
 //    public static void main(String[] args) {
 //        NAV_PerShare();
@@ -11,7 +9,7 @@ public class NetAssetValuePerShare {
         double nav;
         double noOfSharesInIssue;
 
-        System.out.println("\uF0A5 Net Asset Value Per Share \uF0A5");
+        System.out.println("\u25A0 Net Asset Value Per Share \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net asset value / No of shares in issue]");
         System.out.println(" - We use the equity (NAV) Excluding the Non Controlling Shareholders Interest (NCI)");
@@ -20,16 +18,16 @@ public class NetAssetValuePerShare {
         System.out.println("Please enter the following:");
 
         System.out.print("Net asset value: R");
-        nav = Driver.keyboard.nextDouble();
+        nav = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("No of shares in issue: R");
-        noOfSharesInIssue = Driver.keyboard.nextDouble();
+        noOfSharesInIssue = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = nav/(noOfSharesInIssue);
 
         System.out.println();
 
-        System.out.printf("\uF0A7 Net Asset Value per share: R%.4f",answer);
+        System.out.printf("\u00B7 Net Asset Value per share: R%.4f",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

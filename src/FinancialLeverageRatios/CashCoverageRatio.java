@@ -1,7 +1,5 @@
 package FinancialLeverageRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class CashCoverageRatio {
 //    public static void main(String[] args) {
 //        CashCoverage();
@@ -13,7 +11,7 @@ public class CashCoverageRatio {
         double amortisation;
         double interest_expense;
 
-        System.out.println("\uF0A5 Cash Coverage Ratio \uF0A5");
+        System.out.println("\u25A0 Cash Coverage Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Earnings before Interest, Tax, Depreciation and Amortization (EBITDA) / Interest Expense]");
         System.out.println(" - Ability of the business to pay interest from Operating Cash flows.");
@@ -26,20 +24,20 @@ public class CashCoverageRatio {
         System.out.println("Please enter the following:");
 
         System.out.print("Profit before Taxation: R");
-        profit_before_taxation_interest = Driver.keyboard.nextDouble();
+        profit_before_taxation_interest = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Depreciation: R");
-        depreciation = Driver.keyboard.nextDouble();
+        depreciation = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Amortization: R");
-        amortisation = Driver.keyboard.nextDouble();
+        amortisation = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Interest expense: R");
-        interest_expense = Driver.keyboard.nextDouble();
+        interest_expense = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (profit_before_taxation_interest + interest_expense + depreciation + amortisation) / interest_expense;
         System.out.println();
-        System.out.printf("\uF0A7 Cash Coverage Ratio: %.4f times.",answer);
+        System.out.printf("\u00B7 Cash Coverage Ratio: %.4f times.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

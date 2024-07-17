@@ -1,17 +1,15 @@
 package InvestmentPerformanceRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class DividendYield {
-    public static void main(String[] args) {
-        DY();
-    }
+//    public static void main(String[] args) {
+//        DY();
+//    }
     public static double DY(){
         double answer;
         double dividend_per_share;
         double market_price_per_share;
 
-        System.out.println("\uF0A5 Dividend Yield (DY) \uF0A5");
+        System.out.println("\u25A0 Dividend Yield (DY) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Dividend per Share (DPS) x 100 / Market price per share (MPS)]");
         System.out.println(" - Cash Return shareholders (Class A / Ordinary) earn on their investment in\n" +
@@ -22,14 +20,14 @@ public class DividendYield {
         System.out.println("Please enter the following:");
 
         System.out.print("Dividend per Share (DPS): R");
-        dividend_per_share = Driver.keyboard.nextDouble();
+        dividend_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Market price per share (MPS): R");
-        market_price_per_share = Driver.keyboard.nextDouble();
+        market_price_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (dividend_per_share * 100) / market_price_per_share;
         System.out.println();
-        System.out.printf("\uF0A7 Dividend Yield (DY): %.4f%%%n",answer);
+        System.out.printf("\u00B7 Dividend Yield (DY): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

@@ -1,7 +1,5 @@
 package AssetManagement;
-
-import Main.Driver;
-
+import Main.*;
 public class DaysInventoryOnHand {
 //    public static void main(String[] args) {
 //        DaysInventory();
@@ -12,7 +10,7 @@ public class DaysInventoryOnHand {
         double cost_of_sales;
         double inventory;
 
-        System.out.println("\uF0A5 Days inventory on hand \uF0A5");
+        System.out.println("\u25A0 Days inventory on hand \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Inventory x 365) / Cost of sales]");
         System.out.println(" - Calculates the average number of days between the purchase (when Risks &\n" +
@@ -29,14 +27,14 @@ public class DaysInventoryOnHand {
         System.out.println("Please enter the following:");
 
         System.out.print("Inventory: R");
-        inventory = Driver.keyboard.nextDouble();
+        inventory = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Cost of sales: R");
-        cost_of_sales = Driver.keyboard.nextDouble();
+        cost_of_sales = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (inventory * 365)/(cost_of_sales);
         System.out.println();
-        System.out.printf("\uF0A7 Days inventory on hand: %.4f days.",answer);
+        System.out.printf("\u00B7 Days inventory on hand: %.4f days.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

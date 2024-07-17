@@ -1,7 +1,5 @@
 package FinancialLeverageRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class DebtToEquityRatioInterestBearingLiabilities {
 //    public static void main(String[] args) {
 //        DebtToEquityInterest();
@@ -13,7 +11,7 @@ public class DebtToEquityRatioInterestBearingLiabilities {
         double long_term_loan;
         double total_equity;
 
-        System.out.println("\uF0A5 Debt To Equity Ratio \uF0A5");
+        System.out.println("\u25A0 Debt To Equity Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Interest Bearing Debt x 100 / Total Equity]");
         System.out.println(" - The Debt to Equity ratio indicates that for every R1 of capital provided by\n" +
@@ -27,20 +25,20 @@ public class DebtToEquityRatioInterestBearingLiabilities {
         System.out.println("Please enter the following:");
 
         System.out.print("Long Term Loan: R");
-        long_term_loan = Driver.keyboard.nextDouble();
+        long_term_loan = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Current Portion - Long Term Loan: R");
-        current_portion_long_term_loan = Driver.keyboard.nextDouble();
+        current_portion_long_term_loan = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Total Equity (E): R");
-        total_equity = Driver.keyboard.nextDouble();
+        total_equity = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (long_term_loan + current_portion_long_term_loan) * 100 / total_equity;
         System.out.println();
-        System.out.printf("\uF0A7 Debt To Equity Ratio: %.4f%%%n",answer);
-        System.out.printf("\uF0A7 Interest Bearing Debt : E  = %.4f : R1",answer);
+        System.out.printf("\u00B7 Debt To Equity Ratio: %.4f%%%n",answer);
+        System.out.printf("\u00B7 Interest Bearing Debt : E  = %.4f : R1",answer);
         System.out.println();
-        System.out.printf("\uF0A7 For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
+        System.out.printf("\u00B7 For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
                 "  provided by Interest Bearing Debt.",answer/100);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");

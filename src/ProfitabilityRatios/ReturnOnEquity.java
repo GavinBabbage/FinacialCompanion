@@ -1,7 +1,5 @@
 package ProfitabilityRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class ReturnOnEquity {
 //    public static void main(String[] args) {
 //        ROE();
@@ -11,7 +9,7 @@ public class ReturnOnEquity {
         double net_profit_after_tax;
         double shareholder_equity;
 
-        System.out.println("\uF0A5 Return on Equity (ROE) \uF0A5");
+        System.out.println("\u25A0 Return on Equity (ROE) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net Profit AFTER Tax x 100 / Shareholders’ Equity]");
         System.out.println(" - The overall measure of the financial success of the firm with respect to\n" +
@@ -25,14 +23,14 @@ public class ReturnOnEquity {
         System.out.println("Please enter the following:");
 
         System.out.print("Net Profit AFTER tax: R");
-        net_profit_after_tax = Driver.keyboard.nextDouble();
+        net_profit_after_tax = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Shareholders’ Equity: R");
-        shareholder_equity = Driver.keyboard.nextDouble();
+        shareholder_equity = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (net_profit_after_tax * 100) / shareholder_equity;
         System.out.println();
-        System.out.printf("\uF0A7 Return on Equity (ROE): %.4f%%%n",answer);
+        System.out.printf("\u00B7 Return on Equity (ROE): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

@@ -1,7 +1,5 @@
 package FinancialLeverageRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class TimesInterestEarnedRatio {
 //    public static void main(String[] args) {
 //        TimesInterestEarned();
@@ -12,7 +10,7 @@ public class TimesInterestEarnedRatio {
         double operating_profit_BEFORE_interest_tax;
         double interest_expense;
 
-        System.out.println("\uF0A5 Times Interest Earned Ratio \uF0A5");
+        System.out.println("\u25A0 Times Interest Earned Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Operating Profit BEFORE Interest & Tax  / Interest Expense ]");
         System.out.println(" - Measures the ability of the business to pay Interest from ACCRUAL Net profits\n" +
@@ -26,14 +24,14 @@ public class TimesInterestEarnedRatio {
         System.out.println("Please enter the following:");
 
         System.out.print("Operating profit BEFORE interest & tax: R");
-        operating_profit_BEFORE_interest_tax = Driver.keyboard.nextDouble();
+        operating_profit_BEFORE_interest_tax = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Interest expense: R");
-        interest_expense = Driver.keyboard.nextDouble();
+        interest_expense = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = operating_profit_BEFORE_interest_tax / interest_expense;
         System.out.println();
-        System.out.printf("\uF0A7 Times Interest Earned Ratio: %.4f times.",answer);
+        System.out.printf("\u00B7 Times Interest Earned Ratio: %.4f times.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

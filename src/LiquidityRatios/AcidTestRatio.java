@@ -1,7 +1,5 @@
 package LiquidityRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class AcidTestRatio {
 //    public static void main(String[] args) {
 //        AcidTest();
@@ -13,7 +11,7 @@ public class AcidTestRatio {
         double current_liabilities;
         double inventory;
 
-        System.out.println("\uF0A5 Acid test ratio (Quick ratio) \uF0A5");
+        System.out.println("\u25A0 Acid test ratio (Quick ratio) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Current assets - Inventory) / Current liabilities]");
         System.out.println(" - A more RELIABLE indicator of liquidity.");
@@ -23,19 +21,19 @@ public class AcidTestRatio {
         System.out.println("Please enter the following:");
 
         System.out.print("Current Assets (CA): R");
-        current_assets = Driver.keyboard.nextDouble();
+        current_assets = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Inventory: R");
-        inventory = Driver.keyboard.nextDouble();
+        inventory = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Current Liabilities (CL): R");
-        current_liabilities = Driver.keyboard.nextDouble();
+        current_liabilities = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (current_assets - inventory)/(current_liabilities);
         System.out.println();
-        System.out.printf("\uF0A7 Acid test ratio (Quick ratio): %.4f times.",answer);
+        System.out.printf("\u00B7 Acid test ratio (Quick ratio): %.4f times.",answer);
         System.out.println();
-        System.out.printf("\uF0A7 CA : CL =  R%.4f : 1",answer);
+        System.out.printf("\u00B7 CA : CL =  R%.4f : 1",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

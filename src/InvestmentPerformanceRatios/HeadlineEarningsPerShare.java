@@ -1,6 +1,7 @@
 package InvestmentPerformanceRatios;
+import Main.*;
 
-import Main.Driver;
+import static Main.Driver.keyboard;
 
 public class HeadlineEarningsPerShare {
 //    public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class HeadlineEarningsPerShare {
         double headline_earnings;
         double weighted_no_of_class_A_shares_in_issue;
 
-        System.out.println("\uF0A5 Headline Earnings Per Share (EPS) \uF0A5");
+        System.out.println("\u25A0 Headline Earnings Per Share (EPS) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Headline earnings / Weighted No. of Class A shares in issue]");
         System.out.println(" - Primary measure of company performance.");
@@ -20,14 +21,14 @@ public class HeadlineEarningsPerShare {
         System.out.println("Please enter the following:");
 
         System.out.print("Headline earnings: R");
-        headline_earnings = Driver.keyboard.nextDouble();
+        headline_earnings = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Weighted No. of Class A shares in issue: R");
-        weighted_no_of_class_A_shares_in_issue = Driver.keyboard.nextDouble();
+        weighted_no_of_class_A_shares_in_issue = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = headline_earnings / weighted_no_of_class_A_shares_in_issue;
         System.out.println();
-        System.out.printf("\uF0A7 Headline Earnings Per Share (EPS): R%.4f%n",answer);
+        System.out.printf("\u00B7 Headline Earnings Per Share (EPS): R%.4f%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

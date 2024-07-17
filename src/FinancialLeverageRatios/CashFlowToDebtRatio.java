@@ -1,7 +1,5 @@
 package FinancialLeverageRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class CashFlowToDebtRatio {
 //    public static void main(String[] args) {
 //        CashFlowToDebt();
@@ -14,7 +12,7 @@ public class CashFlowToDebtRatio {
         double current_liabilities;
 
 
-        System.out.println("\uF0A5 Cash Flow To Debt Ratio \uF0A5");
+        System.out.println("\u25A0 Cash Flow To Debt Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Cash Flow From Operations / Total Debt]");
         System.out.println(" - Provides insight into the cash flows from OPERATIONS to repay Debt.");
@@ -28,17 +26,17 @@ public class CashFlowToDebtRatio {
         System.out.println("Please enter the following:");
 
         System.out.print("Net cash inflow/(outflow) from operating activities: R");
-        cash_flow_from_operations = Driver.keyboard.nextDouble();
+        cash_flow_from_operations = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Non-Current Liabilities: R");
-        non_current_liabilities = Driver.keyboard.nextDouble();
+        non_current_liabilities = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Current Liabilities: R");
-        current_liabilities = Driver.keyboard.nextDouble();
+        current_liabilities = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = (cash_flow_from_operations * 100) / (current_liabilities + non_current_liabilities);
         System.out.println();
-        System.out.printf("\uF0A7 Cash Coverage Ratio: %.4f%%%n",answer);
+        System.out.printf("\u00B7 Cash Coverage Ratio: %.4f%%%n",answer);
         System.out.println("\n------------------------------------------------------------------------------");
         return answer;
     }

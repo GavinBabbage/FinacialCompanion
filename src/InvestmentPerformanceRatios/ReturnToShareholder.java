@@ -1,7 +1,5 @@
 package InvestmentPerformanceRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class ReturnToShareholder {
 //    public static void main(String[] args) {
 //        HoldingPeriodReturn();
@@ -12,7 +10,7 @@ public class ReturnToShareholder {
         double p1;
         double dividends_per_share;
 
-        System.out.println("\uF0A5 Return to Shareholder (Holding Period Return (HPR)) \uF0A5");
+        System.out.println("\u25A0 Return to Shareholder (Holding Period Return (HPR)) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: ((P1 - P0) + DPS) x 100 / P0]");
         System.out.println(" - Overall return to shareholders including both Capital appreciation\n" +
@@ -23,17 +21,17 @@ public class ReturnToShareholder {
         System.out.println("Please enter the following:");
 
         System.out.print("Current Share Price (P1): R");
-        p1 = Driver.keyboard.nextDouble();
+        p1 = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Previous Share Price (P0): R");
-        p0 = Driver.keyboard.nextDouble();
+        p0 = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Dividends Per Share (DPS): R");
-        dividends_per_share = Driver.keyboard.nextDouble();
+        dividends_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = ((p1 - p0) + dividends_per_share) * 100 / p0;
         System.out.println();
-        System.out.printf("\uF0A7 Return to Shareholder (Holding Period Return (HPR)): %.4f%%%n", answer);
+        System.out.printf("\u00B7 Return to Shareholder (Holding Period Return (HPR)): %.4f%%%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

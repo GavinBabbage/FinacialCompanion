@@ -1,17 +1,15 @@
 package InvestmentPerformanceRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class DividendCover {
-    public static void main(String[] args) {
-        DC();
-    }
+//    public static void main(String[] args) {
+//        DC();
+//    }
     public static double DC(){
         double answer;
         double headline_earnings;
         double dividend_per_share;
 
-        System.out.println("\uF0A5 Dividend Cover \uF0A5");
+        System.out.println("\u25A0 Dividend Cover \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: HEADLINE Earnings per share (EPS) / Dividend per share (DPS)]");
         System.out.println(" - Indicates number of times the Dividends can be paid out of Current\n" +
@@ -20,20 +18,20 @@ public class DividendCover {
                            "   within the firm to finance Future Growth Plans.");
 
         System.out.println();
-        System.out.println(" \uF0A7 Dividend cover less than 1:\n" +
-                "   \uF0D8 Current years earnings NOT enough to pay current year dividends.");
+        System.out.println(" \u00B7 Dividend cover less than 1:\n" +
+                "   \u2023 Current years earnings NOT enough to pay current year dividends.");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
         System.out.print("HEADLINE Earnings per share (EPS): R");
-        headline_earnings = Driver.keyboard.nextDouble();
+        headline_earnings = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Dividend per share (DPS): R");
-        dividend_per_share = Driver.keyboard.nextDouble();
+        dividend_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = headline_earnings / dividend_per_share;
         System.out.println();
-        System.out.printf("\uF0A7 Dividend Cover: %.4f times",answer);
+        System.out.printf("\u00B7 Dividend Cover: %.4f times",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

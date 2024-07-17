@@ -1,7 +1,5 @@
 package InvestmentPerformanceRatios;
-
-import Main.Driver;
-
+import Main.*;
 public class PriceEarningsRatio {
 //    public static void main(String[] args) {
 //        PE_Ratio();
@@ -12,7 +10,7 @@ public class PriceEarningsRatio {
         double market_price_at_end_of_year;
         double headline_earnings_per_share;
 
-        System.out.println("\uF0A5 Price Earnings Ratio (P/E) \uF0A5");
+        System.out.println("\u25A0 Price Earnings Ratio (P/E) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Market price at end of year / HEADLINE Earnings Per Share (HEPS)]");
         System.out.println(" - Measures how many times the Share price covers HEPS.");
@@ -29,15 +27,15 @@ public class PriceEarningsRatio {
         System.out.println("Please enter the following:");
 
         System.out.print("Market price at end of year: R");
-        market_price_at_end_of_year = Driver.keyboard.nextDouble();
+        market_price_at_end_of_year = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("HEADLINE Earnings Per Share: R");
-        headline_earnings_per_share = Driver.keyboard.nextDouble();
+        headline_earnings_per_share = Double.parseDouble(Driver.keyboard.nextLine());
 
         answer = market_price_at_end_of_year / headline_earnings_per_share;
         System.out.println();
-        System.out.printf("\uF0A7 Price Earnings Ratio (P/E): %.4f times.%n", answer);
-        System.out.printf("\uF0A7 Investors are willing to pay %.4f times for each R1 of reported profits. ", answer);
+        System.out.printf("\u00B7 Price Earnings Ratio (P/E): %.4f times.%n", answer);
+        System.out.printf("\u00B7 Investors are willing to pay %.4f times for each R1 of reported profits. ", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }
