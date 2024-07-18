@@ -80,7 +80,7 @@ public class Glossary {
 
 
         for(String keys : glossary.keySet()){
-            System.out.println( keys + "    :    " + glossary.get(keys));
+            System.out.println( keys + "  :  " + glossary.get(keys));
             System.out.println();
         }
     }
