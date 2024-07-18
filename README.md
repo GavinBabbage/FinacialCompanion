@@ -64,7 +64,7 @@ Welcome to the Finance Companion Application! This Java-based command line tool 
   - **Financial Ratios:** Command phrases related to financial ratio analysis, e.g., `roe`, `roa -all`.
   - **Time Value of Money:** Phrases for TVM calculations, such as `pv`, `fv`.
   - **Bond Valuations:** Use command such as `bond price`, `ytm` for bond related calculations.
-  - **Other Utilities:** Commands like `glossary`, `cmd`, `exit` for accessing glossary, help, and exiting the application.
+  - **Other Utilities:** Commands like `glossary`, `cmds`, `exit` for accessing glossary, help, and exiting the application.
 
 #### Example
 
