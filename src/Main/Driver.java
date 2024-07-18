@@ -357,11 +357,24 @@ public class Driver {
                 break;
 
             case "":
+                System.out.println();
+                System.out.println("Unknown command. Please try again.");
+                System.out.println("Enter 'cmd' to view the list of commands");
+                System.out.println("Enter 'glossary' to view the glossary");
                 break;
 
             case "glossary":
+            case "gloss":
             case "dictionary":
+            case "dict":
                 Glossary.GlossaryLoader();
+                break;
+
+            case "cmd":
+            case "commands":
+            case "help":
+            case "command list":
+                CommandList.Commands();;
                 break;
 
             case "q":
@@ -384,7 +397,11 @@ public class Driver {
                 break;
 
             default:
+
+                System.out.println();
                 System.out.println("Unknown command. Please try again.");
+                System.out.println("Enter 'cmd' to view the list of commands");
+                System.out.println("Enter 'glossary' to view the glossary");
                 break;
         }
     }

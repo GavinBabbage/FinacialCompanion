@@ -1,6 +1,9 @@
 package Main;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class Glossary {
     public static void main(String[] args) {
@@ -78,9 +81,12 @@ public class Glossary {
 
         glossary.put(" \u2043 Sustainable Growth Rate (SGR) (also known as g)" , "Maximum rate which a firm can grow without any EXTERNAL FUNDING. Maintains Debt / Equity ratio – WITH NO ADDITIONAL financial leverage.");
 
+        List<String> sortedKeys = new ArrayList<>(glossary.keySet());
 
-        for(String keys : glossary.keySet()){
-            System.out.println( keys + "  :  " + glossary.get(keys));
+
+        Collections.sort(sortedKeys);
+        for(String keys : sortedKeys){
+            System.out.println(keys + "  :  " + glossary.get(keys));
             System.out.println();
         }
     }
