@@ -1,60 +1,85 @@
-Overview
+# Finance Companion Application
 
 Welcome to the Finance Companion Application! This Java-based command line tool is designed to be a comprehensive aid for anyone looking to understand key finance concepts and perform essential calculations. Whether you're a finance student, professional, or enthusiast, this application will help you grasp the fundamentals of financial ratio analysis, the time value of money, and bond valuations.
-Features
 
-    Financial Ratio Analysis:
-        Compute and interpret liquidity ratios, profitability ratios, solvency ratios, and efficiency ratios.
-        Gain insights into a company's financial health through detailed ratio breakdowns.
+## Features
 
-    Time Value of Money (TVM):
-        Calculate present and future values of investments.
-        Understand and compute annuities, perpetuities, and other TVM-related concepts.
+- **Financial Ratio Analysis:**
+  - Compute and interpret liquidity ratios, profitability ratios, solvency ratios, and efficiency ratios.
+  - Gain insights into a company's financial health through detailed ratio breakdowns.
 
-    Bond Valuations:
-        Evaluate bond prices and yields.
-        Analyze different types of bonds and their respective valuation methods.
+- **Time Value of Money (TVM):**
+  - Calculate present and future values of investments.
+  - Understand and compute annuities, perpetuities, and other TVM-related concepts.
 
-Why Use This Application?
+- **Bond Valuations:**
+  - Evaluate bond prices, yields (YTM), duration, and convexity.
+  - Analyze different types of bonds and their respective valuation methods.
 
-    Educational Tool: Ideal for finance students who want a hands-on approach to learning complex finance calculations.
-    Practical Utility: Useful for professionals needing quick financial computations without the overhead of complex software.
-    User-Friendly: Command line interface that is straightforward and easy to navigate.
+## Why Use This Application?
 
-Getting Started
+- **Educational Tool:** Ideal for finance students who want a hands-on approach to learning complex finance calculations.
+- **Practical Utility:** Useful for professionals needing quick financial computations without the overhead of complex software.
+- **User-Friendly:** Command line interface that is straightforward and easy to navigate.
 
-    Clone the Repository:
+## Getting Started
 
-    bash
+### Installation
 
-git clone https://github.com/GavinBabbage/finance-companion-app.git
+1. Clone the repository:
 
-Navigate to the Project Directory:
+   ```bash
+   git clone https://github.com/GavinBabbage/finance-companion-app.git
+   cd finance-companion-app
+   ```
 
-bash
+2. Compile the application using `make`:
 
-cd finance-companion-app
+   ```bash
+   make
+   ```
 
-Compile and Run:
+   This command will compile all necessary Java files.
 
-bash
+### Requirements
 
-    javac Main.java
-    java Main
+- Java 8 or higher
 
-Requirements
+### Usage
 
-    Java 8 or higher
+#### Running the Application
 
-How to Use
+- To start the application, run:
 
-    Follow the on-screen prompts to choose the type of financial calculation you wish to perform.
-    Enter the required inputs as prompted.
-    View and analyze the results directly in your terminal.
+  ```bash
+  java Main.Driver
+  ```
 
-Contributing
+  Follow the prompts to select calculations and input values.
+
+#### Available Commands
+
+- The application supports the following commands (enter any of these during runtime):
+
+  - **Financial Ratios:** Command phrases related to financial ratio analysis, e.g., `roe`, `roa -all`.
+  - **Time Value of Money:** Phrases for TVM calculations, such as `pv`, `fv`.
+  - **Bond Valuations:** Use command such as `bond price`, `ytm` for bond related calculations.
+  - **Other Utilities:** Commands like `glossary`, `cmd`, `exit` for accessing glossary, help, and exiting the application.
+
+#### Example
+
+1. Start the application:
+
+   ```bash
+   java Main.Driver
+   ```
+
+2. Enter a command from the list and follow the prompts to input necessary values and view results.
+
+### Contributing
 
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to fork the repository and submit a pull request. Please ensure your contributions adhere to the project's coding standards and conventions.
-License
 
-This project is licensed under the MIT License.
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
