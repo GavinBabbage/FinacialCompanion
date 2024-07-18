@@ -14,8 +14,8 @@ public class DaysInventoryOnHand {
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Inventory x 365) / Cost of sales]");
         System.out.println(" - Calculates the average number of days between the purchase (when Risks &\n" +
-                "rewards of ownership is transferred from purchaser to the seller) and sale of\n" +
-                "inventory on credit.");
+                "Rewards of ownership is transferred from purchaser to the seller) and sale of\n" +
+                "Inventory on Credit.");
         System.out.println(" - An increased Days inventory on hand relative to previous years’ and indicates\n" +
                 "INEFFICIENT INVENTORY MANAGEMENT.");
         System.out.println(" - Increases risk of inventory Obsolescence (out of fashion & old), Carrying costs and Opportunity costs,\n" +

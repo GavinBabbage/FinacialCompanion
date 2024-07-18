@@ -14,7 +14,7 @@ public class DebtRatio {
         System.out.println("\u25A0 Debt Ratio \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Total Debt (Non-Current Liabilities + Current Liabilities) x 100 / Total Assets]");
-        System.out.println(" - The Debt ratio indicates the percentage of Total assets financed by Total debt.");
+        System.out.println(" - The Debt Ratio indicates the percentage of Total assets financed by Total Debt.");
         System.out.println(" - Think A = E + L.");
 
         System.out.println();

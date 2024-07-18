@@ -10,7 +10,7 @@ public class EquityMultiplier {
         double total_assets;
         double total_equity;
 
-        System.out.println("\u25A0 Net margin (NM) \u25A0");
+        System.out.println("\u25A0 Equity Multiplier (EM) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Total Assets / Total Equity]");
         System.out.println(" - Use of debt to lever up returns to shareholders / Exposure to Financial\n" +

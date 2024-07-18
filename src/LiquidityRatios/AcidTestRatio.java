@@ -11,7 +11,7 @@ public class AcidTestRatio {
         double current_liabilities;
         double inventory;
 
-        System.out.println("\u25A0 Acid test ratio (Quick ratio) \u25A0");
+        System.out.println("\u25A0 Acid Test Ratio (Quick Ratio) \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Current assets - Inventory) / Current liabilities]");
         System.out.println(" - A more RELIABLE indicator of liquidity.");
@@ -31,7 +31,7 @@ public class AcidTestRatio {
 
         answer = (current_assets - inventory)/(current_liabilities);
         System.out.println();
-        System.out.printf("\u00B7 Acid test ratio (Quick ratio): %.4f times.",answer);
+        System.out.printf("\u00B7 Acid Test Ratio (Quick Ratio): %.4f times.",answer);
         System.out.println();
         System.out.printf("\u00B7 CA : CL =  R%.4f : 1",answer);
         System.out.println();

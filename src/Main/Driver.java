@@ -19,7 +19,7 @@ public class Driver {
     private static String trigger = "";
     private static String input = "";
     public static void main(String[] args) {
-
+        System.out.println();
         System.out.println("\u25A0 Welcome to the Finance Companion Application! \u25A0");
         System.out.print("------------------------------------------------------------------------------\n");
         while(!trigger.toLowerCase().startsWith("q")){
@@ -359,6 +359,11 @@ public class Driver {
             case "":
                 break;
 
+            case "glossary":
+            case "dictionary":
+                Glossary.GlossaryLoader();
+                break;
+
             case "q":
             case "quit":
             case "exit":
@@ -366,7 +371,9 @@ public class Driver {
                 System.out.print("Are you sure you want to quit? Y/N : ");
                 String s = keyboard.nextLine().trim();
                 if(s.toLowerCase().startsWith("y")){
+                    System.out.println();
                     System.out.println("Goodbye!");
+                    System.out.println();
                     exit(0);
                 }
                 else{
