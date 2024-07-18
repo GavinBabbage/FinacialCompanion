@@ -9,7 +9,7 @@ public class PayOutRatio {
         double dividends_per_share;
         double headline_earnings_per_share;
 
-        System.out.println("\u25A0 Pay-out Ratio \u25A0");
+        System.out.println("■ Pay-out Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Dividends per share x 100 / HEADLINE Earnings per share]");
         System.out.println(" - The Pay-out ratio calculates what percentage of Earnings (NPAT) is paid out\n" +
@@ -27,8 +27,8 @@ public class PayOutRatio {
 
         answer = dividends_per_share * 100 / headline_earnings_per_share;
         System.out.println();
-        System.out.printf("\u00B7 Headline Earnings Per Share (EPS): %.4f%%%n",answer);
-        System.out.printf("\u00B7 Retention Ratio = %.4f%%%n",100 - answer);
+        System.out.printf(" · Headline Earnings Per Share (EPS): %.4f%%%n",answer);
+        System.out.printf(" · Retention Ratio = %.4f%%%n",100 - answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

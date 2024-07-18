@@ -12,7 +12,7 @@ public class HeadlineEarningsPerShare {
         double headline_earnings;
         double weighted_no_of_class_A_shares_in_issue;
 
-        System.out.println("\u25A0 Headline Earnings Per Share (EPS) \u25A0");
+        System.out.println("■ Headline Earnings Per Share (EPS) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Headline earnings / Weighted No. of Class A shares in issue]");
         System.out.println(" - Primary measure of company performance.");
@@ -28,7 +28,7 @@ public class HeadlineEarningsPerShare {
 
         answer = headline_earnings / weighted_no_of_class_A_shares_in_issue;
         System.out.println();
-        System.out.printf("\u00B7 Headline Earnings Per Share (EPS): R%.4f%n",answer);
+        System.out.printf(" · Headline Earnings Per Share (EPS): R%.4f%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

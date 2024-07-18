@@ -10,7 +10,7 @@ public class SustainableGrowthRate {
         double roe;
         double retention_ratio;
 
-        System.out.println("\u25A0 Sustainable Growth Rate (SGR) (also known as g) \u25A0");
+        System.out.println("■ Sustainable Growth Rate (SGR) (also known as g) ■");
         System.out.println(" - Maximum rate which a firm can grow without any EXTERNAL FUNDING.");
         System.out.println(" - Maintains Debt / Equity ratio – WITH NO ADDITIONAL financial leverage.");
         System.out.print("------------------------------------------------------------------------------\n");
@@ -26,7 +26,7 @@ public class SustainableGrowthRate {
 
         answer = (roe * retention_ratio) * 100;
         System.out.println();
-        System.out.printf("\u00B7 Sustainable Growth Rate (SGR) (also known as g): %.4f%%", answer);
+        System.out.printf(" · Sustainable Growth Rate (SGR) (also known as g): %.4f%%", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

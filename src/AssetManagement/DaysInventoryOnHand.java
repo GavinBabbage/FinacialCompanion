@@ -10,7 +10,7 @@ public class DaysInventoryOnHand {
         double cost_of_sales;
         double inventory;
 
-        System.out.println("\u25A0 Days inventory on hand \u25A0");
+        System.out.println("■ Days inventory on hand ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Inventory x 365) / Cost of sales]");
         System.out.println(" - Calculates the average number of days between the purchase (when Risks &\n" +
@@ -34,7 +34,7 @@ public class DaysInventoryOnHand {
 
         answer = (inventory * 365)/(cost_of_sales);
         System.out.println();
-        System.out.printf("\u00B7 Days inventory on hand: %.4f days.",answer);
+        System.out.printf(" · Days inventory on hand: %.4f days.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

@@ -9,7 +9,7 @@ public class MarketPriceToBookUsingSharePrice {
         double market_price_at_end_of_year;
         double nav_per_share;
 
-        System.out.println("\u25A0 Market Price to Book (Using Share price) \u25A0");
+        System.out.println("■ Market Price to Book (Using Share price) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Market Price at end of year / Book Value (NAV) per share]");
         System.out.print("------------------------------------------------------------------------------\n");
@@ -23,7 +23,7 @@ public class MarketPriceToBookUsingSharePrice {
 
         answer = market_price_at_end_of_year / nav_per_share;
         System.out.println();
-        System.out.printf("\u00B7 Market Price to Book (Using Share price): %.4f times.%n", answer);
+        System.out.printf(" · Market Price to Book (Using Share price): %.4f times.%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

@@ -10,7 +10,7 @@ public class NetOperatingProfitMargin {
         double net_profit_before_interest_tax;
         double revenue;
 
-        System.out.println("\u25A0 Operating Profit Margin \u25A0");
+        System.out.println("■ Operating Profit Margin ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net Profit BEFORE Interest & Tax x 100 / Revenue]");
         System.out.println(" - The Net Operating Profit Margin ratio expresses the Net Profit Before\n" +
@@ -19,10 +19,10 @@ public class NetOperatingProfitMargin {
                            "   Operating expenses are subtracted.");
 
         System.out.println();
-        System.out.println(" \u00B7 A decrease in Net Operating Margin can be caused by:\n" +
-                "   \u2023 Decrease in Selling prices\n" +
-                "   \u2023 Increase in Cost of sales\n" +
-                "   \u2023 Increase in Operating expenses (Efficiencies)");
+        System.out.println("  · A decrease in Net Operating Margin can be caused by:\n" +
+                "   ‣ Decrease in Selling prices\n" +
+                "   ‣ Increase in Cost of sales\n" +
+                "   ‣ Increase in Operating expenses (Efficiencies)");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
@@ -34,8 +34,8 @@ public class NetOperatingProfitMargin {
 
         answer = net_profit_before_interest_tax * 100/ revenue;
         System.out.println();
-        System.out.printf("\u00B7 Net Profit BEFORE Interest & Tax: %.4f%%%n",answer);
-        System.out.printf("\u00B7 For every R1 earned %.4f%% was Net profit BEFORE Interest and Tax.", answer);
+        System.out.printf(" · Net Profit BEFORE Interest & Tax: %.4f%%%n",answer);
+        System.out.printf(" · For every R1 earned %.4f%% was Net profit BEFORE Interest and Tax.", answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

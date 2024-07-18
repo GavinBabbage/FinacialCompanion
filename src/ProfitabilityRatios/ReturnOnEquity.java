@@ -9,7 +9,7 @@ public class ReturnOnEquity {
         double net_profit_after_tax;
         double shareholder_equity;
 
-        System.out.println("\u25A0 Return on Equity (ROE) \u25A0");
+        System.out.println("■ Return on Equity (ROE) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net Profit AFTER Tax x 100 / Shareholders’ Equity]");
         System.out.println(" - The overall measure of the financial success of the firm with respect to\n" +
@@ -30,7 +30,7 @@ public class ReturnOnEquity {
 
         answer = (net_profit_after_tax * 100) / shareholder_equity;
         System.out.println();
-        System.out.printf("\u00B7 Return on Equity (ROE): %.4f%%%n",answer);
+        System.out.printf(" · Return on Equity (ROE): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

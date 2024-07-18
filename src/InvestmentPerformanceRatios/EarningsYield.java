@@ -9,7 +9,7 @@ public class EarningsYield {
         double earnings_per_share;
         double market_price_per_share;
 
-        System.out.println("\u25A0 Earnings Yield (EY) (Inverse of PE) \u25A0");
+        System.out.println("■ Earnings Yield (EY) (Inverse of PE) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Earnings per share (EPS) x 100 / Market price per share]");
         System.out.println(" - Yield investors are demanding on their investments.");
@@ -24,7 +24,7 @@ public class EarningsYield {
 
         answer = earnings_per_share * 100 / market_price_per_share;
         System.out.println();
-        System.out.printf("\u00B7 Earnings Yield (EY) (Inverse of PE): %.4f%%%n", answer);
+        System.out.printf(" · Earnings Yield (EY) (Inverse of PE): %.4f%%%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

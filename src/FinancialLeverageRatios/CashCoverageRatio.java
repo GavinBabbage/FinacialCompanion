@@ -11,7 +11,7 @@ public class CashCoverageRatio {
         double amortisation;
         double interest_expense;
 
-        System.out.println("\u25A0 Cash Coverage Ratio \u25A0");
+        System.out.println("■ Cash Coverage Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Earnings before Interest, Tax, Depreciation and Amortization (EBITDA) / Interest Expense]");
         System.out.println(" - Ability of the business to pay interest from Operating Cash flows.");
@@ -37,7 +37,7 @@ public class CashCoverageRatio {
 
         answer = (profit_before_taxation_interest + interest_expense + depreciation + amortisation) / interest_expense;
         System.out.println();
-        System.out.printf("\u00B7 Cash Coverage Ratio: %.4f times.",answer);
+        System.out.printf(" · Cash Coverage Ratio: %.4f times.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

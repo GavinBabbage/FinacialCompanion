@@ -9,7 +9,7 @@ public class DividendYield {
         double dividend_per_share;
         double market_price_per_share;
 
-        System.out.println("\u25A0 Dividend Yield (DY) \u25A0");
+        System.out.println("■ Dividend Yield (DY) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Dividend per Share (DPS) x 100 / Market price per share (MPS)]");
         System.out.println(" - Cash Return shareholders (Class A / Ordinary) earn on their investment in\n" +
@@ -27,7 +27,7 @@ public class DividendYield {
 
         answer = (dividend_per_share * 100) / market_price_per_share;
         System.out.println();
-        System.out.printf("\u00B7 Dividend Yield (DY): %.4f%%%n",answer);
+        System.out.printf(" · Dividend Yield (DY): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

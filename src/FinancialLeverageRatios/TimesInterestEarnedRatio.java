@@ -10,7 +10,7 @@ public class TimesInterestEarnedRatio {
         double operating_profit_BEFORE_interest_tax;
         double interest_expense;
 
-        System.out.println("\u25A0 Times Interest Earned Ratio \u25A0");
+        System.out.println("■ Times Interest Earned Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Operating Profit BEFORE Interest & Tax  / Interest Expense ]");
         System.out.println(" - Measures the ability of the business to pay Interest from ACCRUAL Net profits\n" +
@@ -31,7 +31,7 @@ public class TimesInterestEarnedRatio {
 
         answer = operating_profit_BEFORE_interest_tax / interest_expense;
         System.out.println();
-        System.out.printf("\u00B7 Times Interest Earned Ratio: %.4f times.",answer);
+        System.out.printf(" · Times Interest Earned Ratio: %.4f times.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

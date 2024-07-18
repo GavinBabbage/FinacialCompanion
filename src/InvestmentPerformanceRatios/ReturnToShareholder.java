@@ -10,7 +10,7 @@ public class ReturnToShareholder {
         double p1;
         double dividends_per_share;
 
-        System.out.println("\u25A0 Return to Shareholder (Holding Period Return (HPR)) \u25A0");
+        System.out.println("■ Return to Shareholder (Holding Period Return (HPR)) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: ((P1 - P0) + DPS) x 100 / P0]");
         System.out.println(" - Overall return to shareholders including both Capital appreciation\n" +
@@ -31,7 +31,7 @@ public class ReturnToShareholder {
 
         answer = ((p1 - p0) + dividends_per_share) * 100 / p0;
         System.out.println();
-        System.out.printf("\u00B7 Return to Shareholder (Holding Period Return (HPR)): %.4f%%%n", answer);
+        System.out.printf(" · Return to Shareholder (Holding Period Return (HPR)): %.4f%%%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

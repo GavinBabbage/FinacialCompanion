@@ -9,6 +9,8 @@ import LiquidityRatios.*;
 import ProfitabilityRatios.*;
 import SolvencyAndNetAssetValue.*;
 import SustainableGrowthRate.*;
+import TimeValueOfMoney.*;
+import BondCalculations.*;
 
 import java.util.Scanner;
 
@@ -20,7 +22,7 @@ public class Driver {
     private static String input = "";
     public static void main(String[] args) {
         System.out.println();
-        System.out.println("\u25A0 Welcome to the Finance Companion Application! \u25A0");
+        System.out.println("■ Welcome to the Finance Companion Application! ■");
         System.out.print("------------------------------------------------------------------------------\n");
         while(!trigger.toLowerCase().startsWith("q")){
             InputLooper();
@@ -356,6 +358,64 @@ public class Driver {
                 DuPontAnalysis.DuPont();
                 break;
 
+            case "pv":
+            case "present value":
+                PresentValue.PresentValue();
+                break;
+
+            case "fv":
+            case "future value":
+                FutureValue.FutureValue();
+                break;
+
+            case "irr":
+            case "internal rate of return":
+                InternalRateOfReturn.IRR();
+                break;
+
+            case "pvifa":
+            case "present value interest factor of annuity":
+            case "present value interest factor annuity":
+                PresentValueInterestFactorOfAnnuity.presentValueInterestFactorOfAnnuity();
+
+                break;
+
+            case "fvifa":
+            case "future value interest factor of annuity":
+            case "future value interest factor annuity":
+                FutureValueInterestFactorOfAnnuity.futureValueInterestFactorOfAnnuity();
+                break;
+
+            case "bond price":
+            case "bp":
+                BondPrice.BondPrice();
+                break;
+
+            case "npv":
+            case "net present value":
+                NetPresentValue.NPV();
+                break;
+
+            case "current yield":
+            case "cy":
+                CurrentYield.CurrentYield();
+                break;
+
+            case "yield to maturity":
+            case "ytm":
+                YieldToMaturity.YieldToMaturity();
+                break;
+
+            case "duration":
+            case "bond duration":
+            case "macaulay duration":
+            case "macaulay":
+            case "convexity":
+            case "bond convexity":
+            case "macaulay duration and convexity":
+                DurationAndConvexity.DurationAndConvexity();
+                break;
+
             case "":
                 System.out.println();
                 System.out.println("Unknown command. Please try again.");
@@ -367,10 +427,11 @@ public class Driver {
             case "gloss":
             case "dictionary":
             case "dict":
-                Glossary.GlossaryLoader();
+                Glossary.define();
                 break;
 
             case "cmd":
+            case "cmds":
             case "commands":
             case "help":
             case "command list":
@@ -400,7 +461,7 @@ public class Driver {
 
                 System.out.println();
                 System.out.println("Unknown command. Please try again.");
-                System.out.println("Enter 'cmd' to view the list of commands");
+                System.out.println("Enter 'cmds' to view the list of commands");
                 System.out.println("Enter 'glossary' to view the glossary");
                 break;
         }

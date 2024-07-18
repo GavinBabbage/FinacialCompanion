@@ -11,7 +11,7 @@ public class MarketValueAdded {
         double total_equity;
         double nci;
 
-        System.out.println("\u25A0 Market Value Added (MVA) \u25A0");
+        System.out.println("■ Market Value Added (MVA) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Market capitalisation – (Total equity – NCI)]");
         System.out.println(" - A negative MVA means Market value < Book value");
@@ -29,7 +29,7 @@ public class MarketValueAdded {
 
         answer = market_capitalisation - total_equity + nci;
         System.out.println();
-        System.out.printf("\u00B7 Market Value Added (MVA): R%.4f%n", answer);
+        System.out.printf(" · Market Value Added (MVA): R%.4f%n", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

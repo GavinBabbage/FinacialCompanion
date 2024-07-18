@@ -10,7 +10,7 @@ public class InventoryTurnoverRatio {
         double cost_of_sales;
         double inventory;
 
-        System.out.println("\u25A0 Inventory Turnover Ratio \u25A0");
+        System.out.println("■ Inventory Turnover Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Cost of sales / Inventory]");
         System.out.println(" - Calculates the average number of times inventory is sold during the year.");
@@ -25,7 +25,7 @@ public class InventoryTurnoverRatio {
 
         answer = cost_of_sales / inventory;
         System.out.println();
-        System.out.printf("\u00B7 Inventory Turnover Ratio: %.4f times.",answer);
+        System.out.printf(" · Inventory Turnover Ratio: %.4f times.",answer);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;

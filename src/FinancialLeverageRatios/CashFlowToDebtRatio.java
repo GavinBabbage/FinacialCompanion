@@ -12,7 +12,7 @@ public class CashFlowToDebtRatio {
         double current_liabilities;
 
 
-        System.out.println("\u25A0 Cash Flow To Debt Ratio \u25A0");
+        System.out.println("■ Cash Flow To Debt Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Cash Flow From Operations / Total Debt]");
         System.out.println(" - Provides insight into the cash flows from OPERATIONS to repay Debt.");
@@ -36,7 +36,7 @@ public class CashFlowToDebtRatio {
 
         answer = (cash_flow_from_operations * 100) / (current_liabilities + non_current_liabilities);
         System.out.println();
-        System.out.printf("\u00B7 Cash Coverage Ratio: %.4f%%%n",answer);
+        System.out.printf(" · Cash Coverage Ratio: %.4f%%%n",answer);
         System.out.println("\n------------------------------------------------------------------------------");
         return answer;
     }

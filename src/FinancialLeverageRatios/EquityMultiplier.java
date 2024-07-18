@@ -10,7 +10,7 @@ public class EquityMultiplier {
         double total_assets;
         double total_equity;
 
-        System.out.println("\u25A0 Equity Multiplier (EM) \u25A0");
+        System.out.println("■ Equity Multiplier (EM) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Total Assets / Total Equity]");
         System.out.println(" - Use of debt to lever up returns to shareholders / Exposure to Financial\n" +
@@ -32,7 +32,7 @@ public class EquityMultiplier {
 
         answer = total_assets / total_equity;
         System.out.println();
-        System.out.printf("\u00B7 Equity Multiplier (EM): %.4f times.%n",answer);
+        System.out.printf(" · Equity Multiplier (EM): %.4f times.%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

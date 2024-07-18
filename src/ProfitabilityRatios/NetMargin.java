@@ -10,7 +10,7 @@ public class NetMargin {
         double net_profit_after_interest_tax;
         double revenue;
 
-        System.out.println("\u25A0 Net Margin (NM) \u25A0");
+        System.out.println("■ Net Margin (NM) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Net Profit AFTER Interest & Tax x 100 / Revenue]");
         System.out.println(" - Evaluates operational efficiency in terms of Sales, Cost of Sales,\n" +
@@ -29,7 +29,7 @@ public class NetMargin {
 
         answer = net_profit_after_interest_tax * 100/ revenue;
         System.out.println();
-        System.out.printf("\u00B7 Net Margin (NM): %.4f%%%n",answer);
+        System.out.printf(" · Net Margin (NM): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

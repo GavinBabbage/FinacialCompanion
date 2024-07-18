@@ -9,7 +9,7 @@ public class ReturnOnTotalAssets {
         double earnings_after_interest_and_tax;
         double total_assets;
 
-        System.out.println("\u25A0 Return on Total Assets (ROA) \u25A0");
+        System.out.println("■ Return on Total Assets (ROA) ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Earnings AFTER Interest and Tax x 100 / Total assets]");
         System.out.println(" - ROA evaluates the use of ALL assets to generate income AFTER Interest and Tax.");
@@ -26,7 +26,7 @@ public class ReturnOnTotalAssets {
 
         answer = (earnings_after_interest_and_tax * 100) / total_assets;
         System.out.println();
-        System.out.printf("\u00B7 Return on Total Assets (ROA): %.4f%%%n",answer);
+        System.out.printf(" · Return on Total Assets (ROA): %.4f%%%n",answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }

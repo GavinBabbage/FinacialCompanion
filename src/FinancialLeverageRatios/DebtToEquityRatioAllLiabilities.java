@@ -11,7 +11,7 @@ public class DebtToEquityRatioAllLiabilities {
         double current_liabilities;
         double total_equity;
 
-        System.out.println("\u25A0 Debt To Equity Ratio \u25A0");
+        System.out.println("■ Debt To Equity Ratio ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Total Debt (Non-Current Liabilities + Current Liabilities) x 100 / Total Equity]");
         System.out.println(" - The Debt to equity ratio indicates that for every R1 of capital provided by\n" +
@@ -31,8 +31,8 @@ public class DebtToEquityRatioAllLiabilities {
 
         answer = (non_current_liabilities + current_liabilities) * 100 / total_equity;
         System.out.println();
-        System.out.printf("\u00B7 Debt To Equity Ratio: %.4f%%%n",answer);
-        System.out.printf("\u00B7 For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
+        System.out.printf(" · Debt To Equity Ratio: %.4f%%%n",answer);
+        System.out.printf(" · For every R1 of finance provided by Equity in the target year, R%.4f was\n" +
                           "  provided by Debt.",answer/100);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");

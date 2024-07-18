@@ -9,7 +9,7 @@ public class MarketValueAddedPERSHARE {
         double market_value_added;
         double number_of_shares_issued;
 
-        System.out.println("\u25A0 Market Value Added (MVA) PER SHARE \u25A0");
+        System.out.println("■ Market Value Added (MVA) PER SHARE ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Market Value Added (MVA) / Number of shares issued]");
         System.out.print("------------------------------------------------------------------------------\n");
@@ -23,7 +23,7 @@ public class MarketValueAddedPERSHARE {
 
         answer = market_value_added / number_of_shares_issued;
         System.out.println();
-        System.out.printf("\u00B7 Market Value Added (MVA) PER SHARE: R%.4f per share.", answer);
+        System.out.printf(" · Market Value Added (MVA) PER SHARE: R%.4f per share.", answer);
         System.out.println("\n-------------------------------------------------------------------------------");
         return answer;
     }
