@@ -1,4 +1,4 @@
-# Finance Companion Application
+# Financial Companion Application
 
 Welcome to the Finance Companion Application! This Java-based command line tool is designed to be a comprehensive aid for anyone looking to understand key finance concepts and perform essential calculations. Whether you're a finance student, professional, or enthusiast, this application will help you grasp the fundamentals of financial ratio analysis, the time value of money, and bond valuations.
 
