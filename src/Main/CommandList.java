@@ -64,10 +64,32 @@ public class CommandList {
     commands.put(" - Current Yield" , "cy ; current yield");
     commands.put(" - Yield to Maturity (YTM)" , "ytm ; yield to maturity");
     commands.put(" - Bond Price" , "bp ; bond price");
+    commands.put(" - Bond Value" , "bv ; bond value");
     commands.put(" - Macaulay Duration and Convexity" , "macaulay duration ; macaulay ; duration ; bond duration ; convexity ; bond convexity ; macaulay duration and convexity");
     commands.put(" - Command List" , "cmd ; cmds ; commands ; help ; command list");
     commands.put(" - Glossary" , "glossary ; gloss ; dictionary ; dict");
     commands.put(" - Exit / Quit" , "q ; quit ; exit ; done");
+
+    commands.put(" - Annual Percentage Rate" , "apr ; annual percentage rate");
+    commands.put(" - Compound Annual Growth Rate (CAGR)" , "cagr ; compound annual growth rate ; compound growth rate ; compound gr ; compound g");
+    commands.put(" - Compound Interest" , "compound ; compound interest");
+    commands.put(" - Continuous Compounding" , "continuous ; continuous compounding");
+    commands.put(" - Effective Annual Rate (EAR)" , "ear ; effective rate ; effective annual rate");
+    commands.put(" - Future Value of Annuity (FVA)" , "fva ; fv annuity ; fv of annuity ; future value annuity ; future value of annuity");
+    commands.put(" - Future Value of Ordinary Annuity" , "fvoa ; fv ordinary annuity ; fv of ordinary annuity ; future value ordinary annuity ; future value of ordinary annuity");
+    commands.put(" - Future Value of Annuity Due" , "fvad ; fv annuity due ; fv of annuity due ; future value annuity due ; future value of annuity due");
+    commands.put(" - Future Value of Growing Perpetuity" , "fvgp ; fv growing perpetuity ; fv of growing perpetuity ; future value growing perpetuity ; future value of growing perpetuity");
+    commands.put(" - Growing Perpetuity" , "gp ; growing perpetuity");
+    commands.put(" - Interest Rate" , "ir ; i ; interest rate");
+    commands.put(" - Loan Installment" , "Loan ; Loan Installment");
+    commands.put(" - Present Value of Perpetuity" , "pvp ; pv perpetuity ; present value perpetuity ; present value of perpetuity");
+    commands.put(" - Present Value of Annuity (PVA)" , "pva ; pv annuity ; pv of annuity ; present value annuity ; present value of annuity");
+    commands.put(" - Present Value of Annuity Due" , "pvad ; pv annuity due ; pv of annuity due ; present value annuity due ; present value of annuity due");
+    commands.put(" - Present Value of Delayed Annuity" , "pvda ; pv delayed ; pv delayed annuity ; pv of da ;  present value delayed ; present value of delayed annuity");
+    commands.put(" - Present Value For Withdrawal" , "pvfw ; pv withdrawal ; present value withdrawal ; present value for withdrawal");
+    commands.put(" - Present Value of Ordinary Annuity" , "pvoa ; pv ordinary annuity ; pv of ordinary annuity ; present value ordinary annuity ; present value of ordinary annuity");
+    commands.put(" - Simple Interest" , "simple ; simple interest");
+    commands.put(" - Time to Reach Future Value" , "ttrfv ; time to reach ; time ; time to reach future value");
 
     List<String> sortedKeys = new ArrayList<>(commands.keySet());
 

@@ -14,8 +14,9 @@ public class FutureValueInterestFactorOfAnnuity {
         System.out.println(" - Evaluates the future value of a series of equal cash flows (annuity).");
 
         System.out.println();
-        System.out.println("  · A higher FVIFA indicates higher future value for the same amount of cash flows.");
-        System.out.println("  · Reasons:\n" +
+        System.out.println(" · A higher FVIFA indicates higher future value for the same amount of cash\n" +
+                           "   flows.");
+        System.out.println(" · Reasons:\n" +
                            "     ‣ Higher discount rate.\n" +
                            "     ‣ More time until the final payment.");
         System.out.print("------------------------------------------------------------------------------\n");

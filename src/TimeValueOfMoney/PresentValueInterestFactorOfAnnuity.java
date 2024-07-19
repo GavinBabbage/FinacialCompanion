@@ -14,8 +14,9 @@ public class PresentValueInterestFactorOfAnnuity {
         System.out.println(" - Evaluates the present value of a series of equal cash flows (annuity).");
 
         System.out.println();
-        System.out.println("  · A higher PVIFA indicates higher present value for the same amount of cash flows.");
-        System.out.println("  · Reasons:\n" +
+        System.out.println(" · A higher PVIFA indicates higher present value for the same amount of\n" +
+                           "   cash flows.");
+        System.out.println(" · Reasons:\n" +
                            "     ‣ Lower discount rate.\n" +
                            "     ‣ More time until the final payment.");
         System.out.print("------------------------------------------------------------------------------\n");

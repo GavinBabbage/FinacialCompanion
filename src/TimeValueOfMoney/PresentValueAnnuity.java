@@ -2,23 +2,23 @@ package TimeValueOfMoney;
 
 import Main.Driver;
 
-public class FutureValue {
-    public static double FutureValue() {
-        double presentValue;
+public class PresentValueAnnuity {
+    public static double PVA() {
+        double periodicPayment;
         double annualRate;
         double years;
         int compoundingPeriods;
-        double futureValue;
+        double presentValueAnnuity;
 
-        System.out.println("■ Future Value (FV) ■");
+        System.out.println("■ Present Value of Annuity (PVA) ■");
         System.out.print("------------------------------------------------------------------------------\n");
-        System.out.println("[FORMULA: FV = PV * (1 + (i/m))^(n*m)]");
-        System.out.println(" - Calculates the future value of a present sum of money considering compounding periods.");
+        System.out.println("[FORMULA: PVA = P * (1 - (1 + (i/m))^(-n*m)) / (i/m)]");
+        System.out.println(" - Calculates the present value of a series of equal periodic payments.");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
-        System.out.print("Present Value (PV): R");
-        presentValue = Double.parseDouble(Driver.keyboard.nextLine());
+        System.out.print("Periodic Payment (P): R");
+        periodicPayment = Double.parseDouble(Driver.keyboard.nextLine());
 
         System.out.print("Annual Rate of Return (i) (as a decimal): ");
         annualRate = Double.parseDouble(Driver.keyboard.nextLine());
@@ -29,11 +29,11 @@ public class FutureValue {
         System.out.print("Number of Compounding Periods per Year (m): ");
         compoundingPeriods = Integer.parseInt(Driver.keyboard.nextLine());
 
-        futureValue = presentValue * Math.pow(1 + (annualRate / compoundingPeriods), years * compoundingPeriods);
+        presentValueAnnuity = periodicPayment * (1 - Math.pow(1 + (annualRate / compoundingPeriods), -years * compoundingPeriods)) / (annualRate / compoundingPeriods);
         System.out.println();
-        System.out.printf(" · Future Value (FV): R%.4f", futureValue);
+        System.out.printf(" · Present Value of Annuity (PVA): R%.4f", presentValueAnnuity);
         System.out.println();
         System.out.println("\n-------------------------------------------------------------------------------");
-        return futureValue;
+        return presentValueAnnuity;
     }
 }

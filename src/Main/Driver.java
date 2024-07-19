@@ -391,6 +391,11 @@ public class Driver {
                 BondPrice.BondPrice();
                 break;
 
+            case "bond value":
+            case "bv":
+                BondValue.calculateBondValue();
+                break;
+
             case "npv":
             case "net present value":
                 NetPresentValue.NPV();
@@ -404,6 +409,142 @@ public class Driver {
             case "yield to maturity":
             case "ytm":
                 YieldToMaturity.YieldToMaturity();
+                break;
+
+            case "apr":
+            case "annual percentage rate":
+                AnnualPercentageRate.AnnualPercentageRate();
+                break;
+
+            case "compound":
+            case "compound interest":
+                CompoundInterest.Compound();
+                break;
+
+            case "simple":
+            case "simple interest":
+                SimpleInterest.Simple();
+                break;
+
+            case "gp":
+            case "Growing Perpetuity":
+                GrowingPerpetuity.GP();
+                break;
+
+            case "continuous":
+            case "continuous compounding":
+                ContinuousCompounding.Continuous();
+                break;
+
+            case "ear":
+            case "effective rate":
+            case "effective annual rate":
+                EffectiveAnnualRate.EffectiveAnnualRate();
+                break;
+
+            case "i":
+            case "ir":
+            case "interest rate":
+                InterestRate.IR();
+                break;
+
+            case "loan":
+            case "Loan Installment":
+                LoanInstallment.Installment();
+                break;
+
+            case "fva":
+            case "fv annuity":
+            case "fv of annuity":
+            case "future value annuity":
+            case "future value of annuity":
+                FutureValueAnnuity.FVA();
+                break;
+
+            case "pva":
+            case "pv annuity":
+            case "pv of annuity":
+            case "present value annuity":
+            case "present value of annuity":
+                PresentValueAnnuity.PVA();
+                break;
+
+            case "fvoa":
+            case "fv ordinary annuity":
+            case "fv of ordinary annuity":
+            case "future value ordinary annuity":
+            case "future value of ordinary annuity":
+                FutureValueOfOrdinaryAnnuity.FVOA();
+                break;
+
+            case "pvoa":
+            case "pv ordinary annuity":
+            case "pv of ordinary annuity":
+            case "present value ordinary annuity":
+            case "present value of ordinary annuity":
+                PresentValueOfOrdinaryAnnuity.PVOA();
+                break;
+
+            case "fvad":
+            case "fv annuity due":
+            case "fv of annuity due":
+            case "future value annuity due":
+            case "future value of annuity due":
+                FutureValueAnnuityDue.FVAD();
+                break;
+
+            case "pvad":
+            case "pv annuity due":
+            case "pv of annuity due":
+            case "present value annuity due":
+            case "present value of annuity due":
+                PresentValueAnnuityDue.PVAD();
+                break;
+
+            case "pvfw":
+            case "pv withdrawal":
+            case "present value withdrawal":
+            case "present value for withdrawal":
+                PresentValueForWithdrawal.PVForWithdrawal();
+                break;
+
+            case "pvda":
+            case "pv delayed":
+            case "pv delayed annuity":
+            case "pv of da":
+            case "present value delayed":
+            case "present value of delayed annuity":
+                PresentValueDelayedAnnuity.PVDA();
+                break;
+
+            case "fvgp":
+            case "fv growing perpetuity":
+            case "fv of growing perpetuity":
+            case "future value growing perpetuity":
+            case "future value of growing perpetuity":
+                FutureValueGrowingPerpetuity.FVGP();
+                break;
+
+            case "pvp":
+            case "pv perpetuity":
+            case "present value perpetuity":
+            case "present value of perpetuity":
+                PresentValuePerpetuity.PVP();
+                break;
+
+            case "ttrfv":
+            case "time":
+            case "time to reach":
+            case "time to reach future value":
+                TimeToReachFutureValue.TTRFV();
+                break;
+
+            case "cagr":
+            case "compound annual growth rate":
+            case "compound growth rate":
+            case "compound gr":
+            case "compound g":
+                CompoundGrowthRate.CAGR();
                 break;
 
             case "duration":

@@ -10,7 +10,8 @@ public class CurrentYield {
         System.out.println("■ Current Yield ■");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: (Annual Coupon Payment / Current Market Price) * 100%]");
-        System.out.println(" - Evaluates the yield an investor would receive if they bought the bond at the current market price.");
+        System.out.println(" - Evaluates the yield an investor would receive if they bought the bond at\n" +
+                           "   the current market price.");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 

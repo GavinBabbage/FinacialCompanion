@@ -14,7 +14,7 @@ public class BondPrice {
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("[FORMULA: Bond Price = ∑ (C / (1 + r)^t) + (F / (1 + r)^n)]");
         System.out.println(" - Calculates the price of a bond based on its face value, coupon payments,\n" +
-                           "   and market rate.");
+                "   and market rate.");
         System.out.print("------------------------------------------------------------------------------\n");
         System.out.println("Please enter the following:");
 
@@ -30,6 +30,7 @@ public class BondPrice {
         System.out.print("Market Rate (r) (as a decimal): ");
         marketRate = Double.parseDouble(Driver.keyboard.nextLine());
 
+        // Calculate the price of the bond
         for (int t = 1; t <= periods; t++) {
             bondPrice += (couponRate * faceValue) / Math.pow(1 + marketRate, t);
         }

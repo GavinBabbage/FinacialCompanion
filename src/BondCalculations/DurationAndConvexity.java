@@ -34,11 +34,11 @@ public class DurationAndConvexity {
         for (int t = 1; t <= periods; t++) {
             double cashFlow = (couponRate * faceValue) / Math.pow(1 + marketRate, t);
             duration += t * cashFlow / bondPrice;
-            convexity += t * (t + 1) * cashFlow / Math.pow(1 + marketRate, t);
+            convexity += t * (t + 1) * cashFlow / Math.pow(1 + marketRate, t + 2);
         }
         duration += periods * faceValue / Math.pow(1 + marketRate, periods) / bondPrice;
-        convexity += periods * (periods + 1) * faceValue / Math.pow(1 + marketRate, periods) / bondPrice;
-        convexity /= Math.pow(1 + marketRate, 2);
+        convexity += periods * (periods + 1) * faceValue / Math.pow(1 + marketRate, periods + 2);
+        convexity /= bondPrice;
 
         System.out.println();
         System.out.printf(" · Macaulay Duration: %.4f years", duration);
